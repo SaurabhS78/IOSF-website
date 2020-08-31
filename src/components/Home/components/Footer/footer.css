@@ -1,101 +1,187 @@
-.footer{
-    background-color: #2b2d42 !important;
-    padding-top: 100px !important;
-    position: relative;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
 }
-.footer blockquote {
-    background-color: rgba(43,45,66) !important;
-    font-size: 24px !important;
-    color: #eeeeee !important;
-    font-style: italic;
-    font-weight: lighter !important;
-    margin-bottom: 100px !important;
+.footer {
+  background-color: #2b2d42 !important;
+  padding-top: 100px !important;
+  position: relative;
 }
-.footer blockquote strong{
-    color: #eeeeee !important;
+.footer__joinUsBtn {
+  display: block !important;
+  margin-top: 50px !important;
+  width: 30%;
+  max-width: 243px;
+  margin: 0px auto;
+  font-size: 18px;
+  background-color: #ef233c !important;
+  border: 1px solid #ef233c !important;
+  color: white !important;
 }
-.footer blockquote .footer__joinUsBtn{
-    display: block !important;
-    margin-top: 50px !important;
-    width: 30%;
-    margin: 0px auto;
-    font-size: 16px;
-    letter-spacing: 0.1em;
-    font-weight: bold !important;
-    background-color: #ef233c !important;
-    border: 1px solid #ef233c !important;
-    color: white !important;
+.footer h4 {
+  font-size: 18px !important;
+  color: white !important;
+  font-weight: bold;
 }
-.footer blockquote .footer__joinUsBtn i {
-    margin-left: 10px;
-    color: white !important;
-}
-.footer h4{
-    font-size: 24px !important;
-    color: white !important;
-}
-ul{
-    margin: 0 !important;
+ul {
+  margin: 0 !important;
 }
 .footer__links li {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 5px 0;
+  margin: 0;
 }
-.footer__links li a{
-    color: #eeeeee !important;
-    font-size: 16px !important;
+.footer__links li a {
+  color: #eeeeee !important;
+  font-size: 16px !important;
 }
-.footer__socialLinks a{
-    margin: 0;
-    padding: 0 30px 0 0;
+.footer__socialLinks {
+  padding-top: 26px;
+  display: flex;
+  justify-content: flex-end;
 }
-.footer__socialLinks a i{
-    font-size: 24px !important;
-    color: #eeeeee !important
+.footer__socialLinks a {
+  margin: 0;
+  padding: 0 0 0 30px;
 }
-.footer__copyright{
-    position: absolute;
-    bottom: -100px;
-    left: 0;
+.footer__socialLinks a i {
+  font-size: 24px !important;
+  color: #eeeeee !important;
 }
-.footer__copyright p{
-    color: #eeeeee !important;
+.footer__copyright p {
+  margin-top: 26px;
+  font-size: 16px !important;
+  color: #ffffff !important;
 }
-.footer__subscribeBtn{
-    font-weight: bolder;
-    font-family: "Poppins" !important;
-    letter-spacing: 0.1em;
-    color: white !important;
+.footer__subscribeBtn {
+  font-weight: bold;
+  color: white !important;
+}
+.logo {
+  width: 60px;
+  height: auto;
+}
+.logo-text {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff !important;
+  margin-left: 10px;
+}
+.footer__quote {
+  max-width: 956px;
+  margin: auto;
+  padding: 36px 0 0 0 !important;
+}
+.footer__content {
+  margin: 58px 0 26px 0 !important;
+  position: relative;
+}
+.divider {
+  height: 0px;
+  border-top: 1px solid #ffffff;
+  width: 100%;
+}
+.dropdown {
+  position: absolute !important;
+  bottom: 0;
+  right: 0;
+}
+.dropdown-trigger button {
+  width: 225px !important;
+}
+.dropdown-trigger button span {
+  width: 100% !important;
+  text-align: left;
+  opacity: 0.75;
+}
+.dropdown-trigger button span i {
+  margin-left: auto;
+  margin-right: 4px;
 }
 
-@media screen and (max-width : 600px){
-    .footer blockquote {
-        background-color: rgba(43,45,66) !important;
-        font-size: 18px !important;
-        color: #eeeeee !important;
-        font-style: italic;
-        font-weight: lighter !important;
-        margin-bottom: 70px !important;
-    }
-    .footer blockquote .footer__joinUsBtn{
-        display: block !important;
-        margin-top: 50px !important;
-        width: 100%;
-        margin: 0px auto;
-        font-size: 12px;
-        letter-spacing: 0.1em;
-        font-weight: bold !important;
-        background-color: #ef233c !important;
-        border: 1px solid #ef233c !important;
-        color: white !important;
-    }
-    .footer__socialLinks a{
-        margin: 0;
-        padding: 0 20px 0 0;
-    }
-    .footer__socialLinks a i{
-        font-size: 20px !important;
-        color: #eeeeee !important
-    }
+.fs-14 {
+  font-size: 14px !important;
+}
+.fs-16 {
+  font-size: 16px !important;
+}
+.fs-18 {
+  font-size: 18px !important;
+}
+.d-flex {
+  display: flex !important;
+  align-items: center;
+}
+.fw-bold {
+  font-weight: bold;
+}
+.color-white {
+  color: #ffffff !important;
+}
+.m-left-auto {
+  margin-left: auto;
+}
+.p-top-16 {
+  padding-top: 16px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .footer__joinUsBtn {
+    width: auto;
+  }
+  .footer__socialLinks a {
+    margin: 0;
+    padding: 0 20px 0 0;
+  }
+  .footer__socialLinks a i {
+    font-size: 20px !important;
+    color: #eeeeee !important;
+  }
+  .d-flex {
+    width: max-content;
+  }
+  .footer__heading {
+    display: flex;
+  }
+  .footer__lang {
+    margin-top: 70px;
+  }
+  .footer__socialLinks {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 601px) {
+  .footer__joinUsBtn {
+    width: auto;
+  }
+  .footer__socialLinks a {
+    margin: 0;
+    padding: 0 20px 0 0;
+  }
+  .footer__socialLinks a i {
+    font-size: 20px !important;
+    color: #eeeeee !important;
+  }
+  .d-flex {
+    width: max-content;
+  }
+  .footer__heading {
+    display: flex;
+  }
+  .footer__lang {
+    margin-top: 70px;
+  }
+  .footer__content {
+    display: flex;
+  }
+  .dropdown-trigger button {
+    width: 177px !important;
+  }
+  .footer__end {
+    display: flex;
+  }
 }
